@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LOJO ad preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#1c1612; --paper:#f3eadc; --muted:#6b5e52; --line:#e6ddd0; --blue:#1877f2; --ig:#262626; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Figtree, system-ui, sans-serif; background:#e8dfd0; color:var(--ink); }
+    .page { width:min(1100px, calc(100% - 32px)); margin: 28px auto 64px; }
+    h1 { font-family: Fraunces, Georgia, serif; font-weight:500; font-size:1.8rem; margin:0 0 8px; }
+    .lead { color:var(--muted); max-width:42rem; margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:28px; align-items:start; }
+    .block h2 { font-size:.85rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:0 0 10px; }
+    /* Instagram feed card */
+    .ig { width:100%; max-width:420px; background:#fff; border:1px solid #dbdbdb; border-radius:8px; overflow:hidden; font-size:14px; }
+    .ig-top { display:flex; align-items:center; gap:10px; padding:10px 12px; }
+    .av { width:32px; height:32px; border-radius:50%; background:#c26a3a; color:#fff; display:grid; place-items:center; font-weight:700; font-size:12px; }
+    .ig-top b { display:block; }
+    .sponsored { color:#8e8e8e; font-size:12px; font-weight:400; }
+    .ig img.feed { width:100%; aspect-ratio:1; object-fit:cover; display:block; }
+    .ig-body { padding:10px 12px 14px; }
+    .ig-body p { margin:6px 0 0; line-height:1.4; }
+    .cta { display:flex; justify-content:space-between; align-items:center; border-top:1px solid #efefef; padding:10px 12px; font-weight:600; }
+    .cta a { color:#0095f6; text-decoration:none; }
+    /* Story */
+    .story { width:270px; height:480px; border-radius:18px; overflow:hidden; position:relative; box-shadow:0 12px 40px rgba(0,0,0,.25); }
+    .story img { width:100%; height:100%; object-fit:cover; display:block; }
+    .story .scrim { position:absolute; inset:auto 0 0; padding:90px 16px 22px; background:linear-gradient(transparent, rgba(0,0,0,.78)); color:#fff; }
+    .story h3 { margin:0 0 8px; font-family:Fraunces,Georgia,serif; font-size:1.35rem; font-weight:500; line-height:1.15; }
+    .story p { margin:0 0 12px; font-size:.92rem; opacity:.92; }
+    .story a { display:block; text-align:center; background:#fff; color:#111; text-decoration:none; font-weight:700; padding:10px; border-radius:8px; }
+    .bars { position:absolute; top:10px; left:12px; right:12px; height:3px; background:rgba(255,255,255,.35); border-radius:2px; }
+    .bars::after { content:""; display:block; width:42%; height:100%; background:#fff; border-radius:2px; }
+    /* Google */
+    .g { background:#fff; border-radius:8px; padding:16px 18px; max-width:640px; font-family:Arial,sans-serif; }
+    .g .url { color:#202124; font-size:12px; }
+    .g .url span { color:#5f6368; }
+    .g h3 { color:#1a0dab; font-size:20px; font-weight:400; margin:4px 0 6px; }
+    .g p { color:#4d5156; font-size:14px; margin:0; line-height:1.45; }
+    .g .badge { display:inline-block; border:1px solid #dadce0; border-radius:3px; font-size:11px; padding:0 4px; margin-right:6px; color:#5f6368; }
+    pre { background:#fff; border:1px solid var(--line); padding:14px; overflow:auto; font-size:13px; }
+    a.back { color:var(--ink); }
+    @media (max-width:900px){ .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <p><a class="back" href="./">← LOJO Network</a></p>
+    <h1>Ad preview — private network for shop owners</h1>
+    <p class="lead">This is how the first campaign unit should look on Instagram/Facebook and on Google Search. Photo is documentary (no slogan burned into the image). Destination: the custom site. CTA: email, not the $750 trial.</p>
+
+    <div class="grid">
+      <div class="block">
+        <h2>Instagram / Facebook feed</h2>
+        <article class="ig">
+          <div class="ig-top">
+            <div class="av">L</div>
+            <div>
+              <b>lojo.engineering</b>
+              <span class="sponsored">Sponsored · New Mexico</span>
+            </div>
+          </div>
+          <img class="feed" src="images/ad-feed.jpg" alt="Shop owner checking a phone at the counter">
+          <div class="ig-body">
+            <p><b>lojo.engineering</b> Reach the office from your phone. We set it up.</p>
+            <p>Private network for shops, offices, and a few locations. Your team taps Connect. You do not become the IT department. New Mexico. Email team@lojo.engineering — tell us how many people and locations.</p>
+          </div>
+          <div class="cta">
+            <span>Learn more</span>
+            <a href="https://macdadyj.github.io/lojo-network/">macdadyj.github.io/lojo-network</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="block">
+        <h2>Instagram / Facebook story</h2>
+        <div class="story">
+          <div class="bars"></div>
+          <img src="images/ad-story.jpg" alt="Shop owner in the doorway looking at a phone">
+          <div class="scrim">
+            <h3>Reach the office from your phone.</h3>
+            <p>We set up the private network. You tap Connect.</p>
+            <a href="mailto:team@lojo.engineering?subject=Private%20network%20inquiry">Email team@lojo.engineering</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block" style="margin-top:36px">
+      <h2>Google Search ad</h2>
+      <div class="g">
+        <div class="url"><span class="badge">Sponsored</span> https://macdadyj.github.io › lojo-network</div>
+        <h3>Private network for NM shops — we set it up</h3>
+        <p>Reach the office from a phone or laptop. Files stay off the public internet. One bill. Email team@lojo.engineering.</p>
+      </div>
+    </div>
+
+    <div class="block" style="margin-top:36px">
+      <h2>Paste into Meta Ads Manager</h2>
+      <pre>Primary text:
+Reach the office from your phone. We set it up.
+
+Private network for shops, offices, and a few locations. Your team taps Connect. You do not become the IT department.
+
+New Mexico. Email team@lojo.engineering — tell us how many people and locations.
+
+Headline: Reach the office from your phone
+Description: We set it up. One bill. No IT hire.
+CTA button: Learn more
+Destination: https://macdadyj.github.io/lojo-network/?utm_source=meta&amp;utm_campaign=nm-owners
+Image: images/ad-feed.jpg (1:1)  ·  Story: images/ad-story.jpg (9:16)</pre>
+    </div>
+  </div>
+</body>
+</html>
