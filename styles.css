@@ -208,6 +208,11 @@ nav a:hover { color: var(--copper-dark); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-2 { grid-template-columns: 1fr 1fr; }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-audience {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 .card {
   background: #fff;
@@ -459,6 +464,7 @@ nav a:hover { color: var(--copper-dark); }
     height: 260px;
   }
   .audience .grid-4,
+  .grid-audience,
   .grid-4 {
     grid-template-columns: 1fr 1fr;
   }
@@ -469,6 +475,7 @@ nav a:hover { color: var(--copper-dark); }
 
 @media (max-width: 560px) {
   .grid-4,
+  .grid-audience,
   .audience .grid-4 {
     grid-template-columns: 1fr;
   }
