@@ -1,9 +1,15 @@
-# LOJO Private Network — marketing site
+# LOJO Network (GitHub Pages)
 
-Custom site (not a Wix template). Edit `index.html`, `styles.css`, `ad-preview.html`, and `images/` and push to `master` to publish (GitHub Pages).
-
-Includes Montano cattle-trap field proof, `architecture-montano.html`, and ranch ads (15–16).
+Marketing site for LOJO managed private network (+ optional private AI).
 
 Live: https://macdadyj.github.io/lojo-network/
 
-Nanomaterials company site stays at https://www.lojo.engineering
+## Messaging principles
+- Outcome first (connected sites, you are not the IT department)
+- Proof early (Montano field numbers + photos)
+- One CTA: email team@lojo.engineering
+- Owner language — no Tailscale/VPN/CIDR jargon
+- Cameras ≠ control path (architecture-montano.html)
+
+## Stack
+Static HTML/CSS only. Push to `master` to publish.

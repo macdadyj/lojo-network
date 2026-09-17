@@ -3,117 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Montano cattle trap — LOJO architecture</title>
-  <meta name="description" content="How LOJO carries remote trap latch control for Montano ranch ops. Cameras stay in their own apps. Plain-language field architecture.">
+  <title>Montano field architecture · LOJO</title>
+  <meta name="description" content="How LOJO carries latch control for remote New Mexico cattle and horse traps — cameras stay on their own apps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .arch-hero { padding: 48px 0 24px; }
-    .arch-hero h1 { font-family: Fraunces, Georgia, serif; font-weight: 500; font-size: clamp(1.7rem, 3vw, 2.4rem); margin: 0 0 12px; line-height: 1.2; }
-    .stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 0; }
-    .stat { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 0.92rem; font-weight: 500; }
-    .flow-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 8px; }
-    .flow-steps .card h3 { color: var(--copper-dark); font-size: 0.95rem; letter-spacing: 0.04em; text-transform: uppercase; }
-    .callout { margin-top: 28px; padding: 16px 18px; border-left: 4px solid var(--sage); background: #eef2e8; color: var(--ink); }
-    .callout strong { color: var(--copper-dark); }
-    .back { display: inline-block; margin-bottom: 18px; text-decoration: none; font-weight: 500; color: var(--ink); }
-    .back:hover { color: var(--copper-dark); }
-    @media (max-width: 800px) { .flow-steps { grid-template-columns: 1fr; } }
+    .arch { width: min(100% - 2.5rem, 48rem); margin: 2rem auto 4rem; }
+    .arch h1 { max-width: none; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    .flow { list-style: none; padding: 0; margin: 1.5rem 0; display: grid; gap: 0.75rem; }
+    .flow li { background: var(--panel); border: 1px solid var(--line); border-radius: 1rem; padding: 1rem 1.1rem; }
+    .flow strong { color: var(--accent); }
+    .note { color: var(--muted); border-left: 3px solid var(--accent-2); padding-left: 1rem; margin: 1.5rem 0; }
   </style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="mark" href="./">LOJO <span>Network</span></a>
-      <nav aria-label="Primary">
-        <a href="./#for">Who it&apos;s for</a>
-        <a href="./#proof">Proof</a>
-        <a href="./#plans">Plans</a>
-        <a href="mailto:team@lojo.engineering?subject=Private%20network%20inquiry">Email us</a>
-      </nav>
-    </div>
+  <header class="top">
+    <a class="brand" href="./">LOJO</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="./">Home</a>
+      <a class="nav-cta" href="mailto:team@lojo.engineering?subject=Private%20network%20inquiry">Email us</a>
+    </nav>
   </header>
-
-  <main id="main">
-    <section class="band arch-hero">
-      <div class="wrap">
-        <a class="back" href="./">← LOJO Network</a>
-        <p class="eyebrow">Field architecture</p>
-        <h1>Montano remote cattle trap — how LOJO fits</h1>
-        <p class="lede">A managed private network path for the latch. Eyes stay in the camera apps ranchers already use. Control is a simple browser page once the phone is on LOJO.</p>
-        <div class="stats">
-          <span class="stat">8+ years remote New Mexico</span>
-          <span class="stat">600+ cattle</span>
-          <span class="stat">150+ wild horses</span>
-          <span class="stat">Cell + Wi‑Fi or Starlink</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="band sand">
-      <div class="wrap">
-        <h2>Four pieces</h2>
-        <p class="lede">Same private network whether the trap site rides cellular or Starlink.</p>
-        <div class="grid-2">
-          <article class="card">
-            <h3>1. Trap site</h3>
-            <p>A small weatherproof computer at the pen drives a spring-loaded gate latch. On boot it joins the LOJO private network and waits for a latch command — nothing more.</p>
-          </article>
-          <article class="card">
-            <h3>2. Rancher phone</h3>
-            <p>Connect to LOJO with the VPN app. Watch the pen in the security camera app. Flip the latch from a browser control page. Video and latch stay separate on purpose.</p>
-          </article>
-          <article class="card">
-            <h3>3. LOJO private network</h3>
-            <p>The private path that carries both the phone and the trap computer. We set it up and keep it running so the ranch does not become the IT department.</p>
-          </article>
-          <article class="card">
-            <h3>4. Latch control page</h3>
-            <p>A simple cloud control screen that only talks to allowlisted LOJO devices. It turns a relay on or off to trip the latch. It is not the video system.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="band">
-      <div class="wrap">
-        <h2>Operator flow</h2>
-        <div class="flow-steps">
-          <article class="card">
-            <h3>See</h3>
-            <p>Camera app shows cattle or horses enter the pen.</p>
-          </article>
-          <article class="card">
-            <h3>Decide</h3>
-            <p>Rancher confirms on the phone — already on LOJO.</p>
-          </article>
-          <article class="card">
-            <h3>Act</h3>
-            <p>Browser control page sends the latch command to the trap computer.</p>
-          </article>
-          <article class="card">
-            <h3>Catch</h3>
-            <p>Spring gate closes. Animals secured from miles away.</p>
-          </article>
-        </div>
-        <p class="callout"><strong>LOJO punchline:</strong> the public internet does not carry the control path. Cameras stay familiar rancher tools. LOJO is how you close the gate safely from the road.</p>
-        <p style="margin-top:28px"><a class="btn" href="mailto:team@lojo.engineering?subject=Ranch%20/%20field%20ops%20inquiry">Email team@lojo.engineering</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>LOJO Engineering · New Mexico</span>
-      <span>
-        <a href="mailto:team@lojo.engineering">team@lojo.engineering</a>
-        <span class="sep" aria-hidden="true">·</span>
-        <a class="quiet" href="https://www.lojo.engineering">Nanomaterials</a>
-      </span>
-    </div>
+  <article class="arch">
+    <p class="eyebrow">Field architecture · Montano, NM</p>
+    <h1>Private path for latch control. Cameras stay separate.</h1>
+    <p class="lede">This is how remote cattle and wild-horse trap sites have used LOJO for years: the network carries control. Watching video is still a normal camera app.</p>
+    <ol class="flow">
+      <li><strong>1 · Edge site</strong> — Raspberry Pi with dual-relay hardware at the trap; cell+Wi‑Fi or Starlink as last mile.</li>
+      <li><strong>2 · Join LOJO</strong> — The Pi connects to the managed private network (same idea as a phone with Connect).</li>
+      <li><strong>3 · Control only</strong> — A Socket.IO device talks to the Pub-Node for GPIO / spring-latch open and close.</li>
+      <li><strong>4 · Rancher phone</strong> — Connect on the phone, open the control page in a browser, toggle the latch.</li>
+      <li><strong>5 · Cameras</strong> — Typical security-camera apps for viewing. Not routed through the Pub-Node.</li>
+    </ol>
+    <p class="note">Why it matters for buyers: LOJO is the managed private pipe. Specialty apps keep doing what they already do. You are not forced into one giant “everything” portal.</p>
+    <p><a class="btn-primary" href="mailto:team@lojo.engineering?subject=Field%20deployment%20like%20Montano">Ask about a field deployment</a>
+       &nbsp; <a class="btn-ghost" href="./">← Back to LOJO</a></p>
+  </article>
+  <footer class="foot">
+    <div><strong>LOJO Engineering</strong><p>team@lojo.engineering</p></div>
+    <div class="foot-links"><a href="./">Home</a><a href="ad-preview.html">Ads</a></div>
   </footer>
 </body>
 </html>
