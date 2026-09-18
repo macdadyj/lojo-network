@@ -336,3 +336,18 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   font-size: 0.98rem;
 }
 .also-for strong { color: var(--text); font-weight: 600; }
+
+
+/* Remote cattle-trap service */
+.service-band .lede-tight {
+  max-width: 42rem;
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+}
+.service-band .pilot-card p {
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+.service-band .pilot-grid {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
