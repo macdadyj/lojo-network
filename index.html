@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LOJO — Managed private network for IoT, edge &amp; remote sites</title>
-  <meta name="description" content="LOJO Engineering runs a managed private network for IoT, edge computing, remote sensing, and sovereign/private sites — with optional private AI. Field-proven in New Mexico for 8+ years. Built by a PE.">
-  <meta property="og:title" content="LOJO — Managed private network for IoT, edge &amp; remote sites">
-  <meta property="og:description" content="Sovereign/managed private network for IoT, edge, and remote sensing — optional private AI on your side. Field-proven in New Mexico for 8+ years.">
+  <title>LOJO — Private path &amp; data residency for IoT, edge &amp; remote sites</title>
+  <meta name="description" content="LOJO Engineering: managed private path and honest data residency for IoT, edge, and remote sites. LOJO-managed overlay today; customer VPC / on-prem via Build. Optional private AI. Field-proven in New Mexico.">
+  <meta property="og:title" content="LOJO — Private path &amp; data residency for IoT, edge &amp; remote sites">
+  <meta property="og:description" content="Your path and data residency are the product. LOJO-managed overlay today; customer VPC / on-prem via Build. Optional private AI. Field-proven in New Mexico.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://macdadyj.github.io/lojo-network/">
   <meta property="og:image" content="https://macdadyj.github.io/lojo-network/images/og-lojo.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="LOJO — Managed private network for IoT, edge &amp; remote sites">
-  <meta name="twitter:description" content="Private path for IoT, edge, and remote sensing sites. Optional private AI. Field-proven in New Mexico for 8+ years.">
+  <meta name="twitter:title" content="LOJO — Private path &amp; data residency for IoT, edge &amp; remote sites">
+  <meta name="twitter:description" content="Managed private path with honest residency: LOJO overlay today; customer VPC / on-prem via Build. Optional private AI.">
   <meta name="twitter:image" content="https://macdadyj.github.io/lojo-network/images/og-lojo.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,7 @@
   <header class="top">
     <a class="brand" href="./">LOJO</a>
     <nav class="nav" aria-label="Primary">
+      <a href="#deploy">Deployment</a>
       <a href="#proof">Proof</a>
       <a href="#for">Who it’s for</a>
       <a href="#get">What you get</a>
@@ -38,33 +39,81 @@
 
   <main id="main">
     <section class="hero">
-      <p class="eyebrow">Sovereign / managed private network · IoT &amp; edge · optional private AI</p>
-      <h1>Private path for sites that can’t put control on the open internet.</h1>
-      <p class="lede">LOJO is the managed private network for shops, oil &amp; gas, field IoT, remote sensing, and other sites that need a sovereign path. Edge gear and remote sensing on messy last‑mile — cell, Wi‑Fi, or Starlink — we operate the network. Optional private AI on your side when you want it.</p>
+      <p class="eyebrow">Private path · data residency · optional private AI</p>
+      <h1>Your path and data residency are the product.</h1>
+      <p class="lede">LOJO is the managed private path for shops, oil &amp; gas, field IoT, remote sensing, and other sites that can’t put control on the open internet. <strong>LOJO-managed overlay today; customer VPC / on-prem via Build.</strong> Edge gear on messy last‑mile — cell, Wi‑Fi, or Starlink — we operate the network. Optional private AI when you want it — we do not sell turnkey air-gap as a shipped SKU.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="mailto:team@lojo.engineering?subject=LOJO%20plans">Talk LOJO plans</a>
-        <a class="btn btn-ghost" href="#proof">See the field proof</a>
+        <a class="btn btn-ghost" href="#deploy">See where it runs</a>
       </div>
       <ul class="trust-strip" aria-label="At a glance">
-        <li><strong>Sovereign path</strong> — control stays off the open internet</li>
-        <li><strong>Edge &amp; sensing</strong> — cell, Wi‑Fi, or Starlink</li>
-        <li><strong>Owner-simple</strong> — install app, tap Connect</li>
+        <li><strong>Today</strong> — LOJO-managed overlay (Connexa + our GCP)</li>
+        <li><strong>Build</strong> — customer VPC / on-prem when scoped</li>
+        <li><strong>Optional</strong> — private AI; not an air-gap product claim</li>
       </ul>
 
-      <p class="also-for"><strong>Built for orgs that need:</strong> IoT &amp; edge computing · remote sensing · shops &amp; multi-site ops · oil &amp; gas / field crews — Montano cattle-trap is the proof of the same pattern.</p>
+      <p class="also-for"><strong>Built for orgs that need:</strong> a clear private path · honest residency · IoT &amp; edge · remote sensing · shops &amp; multi-site — Montano cattle-trap is the proof of the same pattern.</p>
+    </section>
+
+    <section class="deploy-band" id="deploy">
+      <p class="eyebrow">Deployment modes · Factory-style clarity</p>
+      <h2>Where it runs. What leaves. What doesn’t.</h2>
+      <p class="lede-tight">Same product idea in every mode — a private control path — with an honest boundary about residency today vs what Build can place in your environment.</p>
+      <div class="deploy-grid" role="list">
+        <article class="deploy-card deploy-card-today" role="listitem">
+          <p class="deploy-tag">Today</p>
+          <h3>LOJO-managed overlay</h3>
+          <dl class="deploy-dl">
+            <dt>Where it runs</dt>
+            <dd>Connexa overlay + Cloud Run in <em>our</em> GCP project <code>montano-349204</code>.</dd>
+            <dt>What leaves</dt>
+            <dd>Capture media → our GCS; ranch-vision Analyze = Vertex / GCP-region inference — not a customer VPC.</dd>
+            <dt>What doesn’t</dt>
+            <dd>Latch &amp; control stay on the LOJO private path after Connect.</dd>
+          </dl>
+        </article>
+        <article class="deploy-card" role="listitem">
+          <p class="deploy-tag">Build</p>
+          <h3>Customer VPC / on-prem</h3>
+          <dl class="deploy-dl">
+            <dt>Where it runs</dt>
+            <dd>Your VPC or on-prem stack — scoped and operated under a Build engagement.</dd>
+            <dt>What leaves</dt>
+            <dd>Only what you approve in that scope (and nothing we invent as “already productized”).</dd>
+            <dt>What doesn’t</dt>
+            <dd>Control placement you own; cameras and specialty apps can stay separate (Montano pattern).</dd>
+          </dl>
+        </article>
+        <article class="deploy-card deploy-card-muted" role="listitem">
+          <p class="deploy-tag">Not a SKU</p>
+          <h3>Full air-gap</h3>
+          <dl class="deploy-dl">
+            <dt>Where it runs</dt>
+            <dd>Isolated environments are possible as engineered work — not a turnkey LOJO product today.</dd>
+            <dt>What leaves</dt>
+            <dd>Defined per engagement; we won’t market air-gap as already shipped.</dd>
+            <dt>What doesn’t</dt>
+            <dd>Don’t read “private path” as “air-gapped out of the box.”</dd>
+          </dl>
+        </article>
+      </div>
+      <aside class="honesty" aria-label="Honesty line">
+        <h3>Honesty line</h3>
+        <p><strong>Today:</strong> Capture leaves the private path into LOJO GCS in project <code>montano-349204</code>, and Analyze runs as Vertex inference in a GCP region — not inside a customer VPC. <strong>Control</strong> (Connect → Pub-Node → GPIO) stays on the LOJO overlay. Customer VPC / on-prem is a Build path, not the default.</p>
+      </aside>
     </section>
 
     <section class="proof" id="proof">
       <div class="proof-copy">
         <p class="eyebrow">Capability proof · New Mexico</p>
         <h2>Montano cattle-trap is the proof — not the only buyer.</h2>
-        <p>For 8+ years, remote cattle and wild-horse trap sites have used LOJO so operators can open and close spring latches from a phone — over cell or Starlink — without putting control on the open internet. Same pattern for shops, oil &amp; gas, field IoT, and remote sensing sites.</p>
+        <p>For 8+ years, remote cattle and wild-horse trap sites have used LOJO so operators can open and close spring latches from a phone — over cell or Starlink — without putting control on the open internet. <strong>One Montano proof line:</strong> Capture → Analyze → maps on a private path.</p>
         <ul class="stat-grid">
           <li><span class="stat">8+</span><span class="stat-label">years in the field</span></li>
           <li><span class="stat">600+</span><span class="stat-label">cattle handled</span></li>
           <li><span class="stat">150+</span><span class="stat-label">wild horses</span></li>
         </ul>
-        <p class="fine">IoT and controls reach you after Connect — cameras and specialty apps keep doing their jobs. <a href="architecture-montano.html">How that deployment works →</a></p>
+        <p class="fine">IoT and controls reach you after Connect — cameras and specialty apps keep doing their jobs. Capture media and Analyze currently land in LOJO’s GCP project (see <a href="#deploy">Deployment</a>). <a href="architecture-montano.html">How that deployment works →</a></p>
 
       <ul class="credibility" aria-label="Credibility">
         <li><strong>New Mexico</strong> — based in Albuquerque</li>
@@ -80,7 +129,7 @@
 
     <section class="band-dark" id="for">
       <p class="eyebrow">Who it’s for</p>
-      <h2>Orgs that need a private path — not another hobby network.</h2>
+      <h2>Orgs that need a private path — with residency they can explain.</h2>
       <div class="card-grid">
         <article class="card">
           <h3>IoT &amp; edge computing</h3>
@@ -97,7 +146,7 @@
         <article class="card card-photo">
           <img src="images/17-cattle-in-trap.jpg" width="800" height="600" alt="Cattle watering inside a circular trap pen">
           <h3>Ranching &amp; remote livestock</h3>
-          <p>Montano cattle-trap is the proof: edge gear on LOJO, control in a browser after Connect, cameras separate.</p>
+          <p>Montano proof: Capture → Analyze → maps on a private path; latch control after Connect; cameras separate.</p>
         </article>
       </div>
     </section>
@@ -107,15 +156,16 @@
       <h2>Outcomes, not a pile of networking parts.</h2>
       <div class="split">
         <ul class="checklist">
-          <li>A sovereign / managed private network — private path for sites that can’t put control on the open internet</li>
+          <li>A managed private path — control off the open internet; <strong>LOJO-managed overlay today</strong></li>
+          <li><strong>Customer VPC / on-prem via Build</strong> when residency must sit in your boundary</li>
           <li>IoT, edge gear, and remote sensing on messy last‑mile — cell, Wi‑Fi, or Starlink — we operate the network</li>
-          <li>IoT and controls reach you after Connect — cameras and specialty apps keep doing their jobs</li>
-          <li>Optional private AI on your side: inference where the data is born; nothing has to leave as a public chatbot</li>
+          <li>Honest GCP boundary: Connexa + Cloud Run in <code>montano-349204</code> today; Capture → our GCS; Analyze = GCP-region Vertex — not your VPC by default</li>
+          <li>Optional private AI on your side when you want it — soft add-on, not the headline</li>
           <li>One invoice to LOJO; Montano cattle-trap is the proof of the same pattern</li>
         </ul>
         <aside class="callout">
           <h3>What we are not</h3>
-          <p>Not a DIY mesh toy. Not “set up a VPN yourself.” This is the <strong>managed private network</strong> offer from LOJO Engineering — with optional private AI when you want it on your side.</p>
+          <p>Not a DIY mesh toy. Not “set up a VPN yourself.” Not a claim that air-gap is already productized. This is the <strong>managed private path</strong> offer from LOJO Engineering — with optional private AI when you want it.</p>
           <p class="fine">Nanomaterials engineering stays at <a href="https://www.lojo.engineering">lojo.engineering</a>.</p>
         </aside>
       </div>
@@ -151,10 +201,10 @@
           <h3>Proof — Montano ranch stack</h3>
           <ul class="checklist">
             <li>Field-proven cattle &amp; wild-horse trap pattern in New Mexico</li>
-            <li>Cloud Run Pub-Node, Capture → GCS, and live device maps</li>
+            <li><strong>Capture → Analyze → maps</strong> on a private path; Cloud Run Pub-Node in <code>montano-349204</code></li>
             <li>Same private-path discipline as the LOJO network offer</li>
           </ul>
-          <p class="fine">Scoped to the Montano Cloud Run stack in use today — not a Flex claim.</p>
+          <p class="fine">Scoped to the Montano Cloud Run stack in use today — not a Flex claim; not a customer-VPC claim.</p>
         </article>
         <article class="pilot-card pilot-card-accent">
           <h3>Who it’s for</h3>
@@ -173,7 +223,7 @@
     <section class="plans" id="plans">
       <p class="eyebrow">Plans</p>
       <h2>Clear plans. Locked numbers.</h2>
-      <p class="lede-tight">Three ways to buy LOJO — private path, operated edge, or systems we design and run. Cameras and specialty apps stay separate (Montano pattern).</p>
+      <p class="lede-tight">Three ways to buy LOJO — private path, operated edge, or systems we design and run. Cameras and specialty apps stay separate (Montano pattern). Optional private AI is an add-on, not a buried substitute for plans.</p>
       <div class="plans-wrap">
         <table class="plans-table">
           <caption class="sr-only">LOJO pricing plans</caption>
@@ -187,17 +237,17 @@
           <tbody>
             <tr>
               <th scope="row">Connect</th>
-              <td>Managed private path for sites that can’t put control on the open internet</td>
+              <td>Managed private path for sites that can’t put control on the open internet (LOJO-managed overlay today)</td>
               <td class="price">from $150/site/mo</td>
             </tr>
             <tr>
               <th scope="row">Operate</th>
-              <td>Connect + we watch edge gear, remote sensing, uptime; browser control after Connect. Cameras and specialty apps stay separate (Montano pattern).<span class="plan-note"> Optional private AI add-on — inference where the data is born.</span></td>
+              <td>Connect + we watch edge gear, remote sensing, uptime; browser control after Connect. Cameras and specialty apps stay separate (Montano pattern).<span class="plan-note"> Optional private AI add-on — inference where you want it scoped.</span></td>
               <td class="price">from $400/site/mo</td>
             </tr>
             <tr>
               <th scope="row">Build</th>
-              <td>Systems-as-a-service — cattle-trap <strong>and similar</strong> remote systems; we design/deploy/hand off or keep running</td>
+              <td>Systems-as-a-service — cattle-trap <strong>and similar</strong> remote systems; <strong>customer VPC / on-prem</strong> when residency must sit in your boundary; we design/deploy/hand off or keep running</td>
               <td class="price">scoped quote<br><span class="price-sub">(typical pilot build from ~$5k)</span></td>
             </tr>
           </tbody>
@@ -209,8 +259,8 @@
       </div>
     </section>
     <section class="cta-block" id="start">
-      <h2>Ready for a private network that stays out of your way?</h2>
-      <p>Pick a <a href="#plans">plan</a>. Write <a href="mailto:team@lojo.engineering?subject=LOJO%20plans">team@lojo.engineering</a> — which plan, sites, and when you want to start.</p>
+      <h2>Ready for a private path you can explain to security?</h2>
+      <p>Pick a <a href="#plans">plan</a>. Review <a href="#deploy">where it runs today</a>. Write <a href="mailto:team@lojo.engineering?subject=LOJO%20plans">team@lojo.engineering</a> — which plan, sites, and when you want to start.</p>
       <a class="btn btn-primary btn-lg" href="mailto:team@lojo.engineering?subject=LOJO%20plans">Talk LOJO plans</a>
     </section>
   </main>
@@ -218,7 +268,7 @@
   <footer class="foot">
     <div>
       <strong>LOJO Engineering</strong>
-      <p>Private networks and private AI · Albuquerque, NM</p>
+      <p>Private path &amp; data residency · Albuquerque, NM</p>
     </div>
     <div class="foot-links">
       <a href="architecture-montano.html">Montano architecture</a>

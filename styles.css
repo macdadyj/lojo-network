@@ -455,3 +455,87 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   }
   .plans-table .price { width: auto; white-space: normal; }
 }
+
+/* Residency / deployment strip (2026-09-18 draft) */
+.deploy-band .lede-tight {
+  max-width: 42rem;
+  color: var(--muted);
+  margin: 0 0 1.75rem;
+}
+.deploy-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 1.35rem;
+}
+.deploy-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  padding: 1.25rem 1.3rem 1.4rem;
+}
+.deploy-card-today {
+  border-color: rgba(111, 207, 151, 0.4);
+  background: linear-gradient(165deg, rgba(111, 207, 151, 0.1), var(--panel) 42%);
+}
+.deploy-card-muted {
+  opacity: 0.95;
+  border-style: dashed;
+}
+.deploy-tag {
+  margin: 0 0 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+.deploy-card h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1.2rem;
+}
+.deploy-dl {
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+.deploy-dl dt {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+.deploy-dl dd {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.honesty {
+  background: #101814;
+  border: 1px solid rgba(196, 163, 90, 0.4);
+  border-radius: 1.15rem;
+  padding: 1.2rem 1.35rem;
+}
+.honesty h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--accent-2);
+}
+.honesty p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 56rem;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  color: var(--accent);
+  background: rgba(111, 207, 151, 0.08);
+  padding: 0.08em 0.35em;
+  border-radius: 0.35rem;
+}
+@media (max-width: 900px) {
+  .deploy-grid { grid-template-columns: 1fr; }
+}
