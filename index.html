@@ -47,7 +47,7 @@
         <a class="btn btn-ghost" href="#deploy">See where it runs</a>
       </div>
       <ul class="trust-strip" aria-label="At a glance">
-        <li><strong>Today</strong> — LOJO-managed overlay (Connexa + our GCP)</li>
+        <li><strong>Today</strong> — LOJO-managed private path</li>
         <li><strong>Build</strong> — customer VPC / on-prem when scoped</li>
         <li><strong>Optional</strong> — private AI; not an air-gap product claim</li>
       </ul>
@@ -56,7 +56,7 @@
     </section>
 
     <section class="deploy-band" id="deploy">
-      <p class="eyebrow">Deployment modes · Factory-style clarity</p>
+      <p class="eyebrow">Deployment modes</p>
       <h2>Where it runs. What leaves. What doesn’t.</h2>
       <p class="lede-tight">Same product idea in every mode — a private control path — with an honest boundary about residency today vs what Build can place in your environment.</p>
       <div class="deploy-grid" role="list">
@@ -65,11 +65,11 @@
           <h3>LOJO-managed overlay</h3>
           <dl class="deploy-dl">
             <dt>Where it runs</dt>
-            <dd>Connexa overlay + Cloud Run in <em>our</em> GCP project <code>montano-349204</code>.</dd>
+            <dd>A LOJO-operated private overlay and control plane — you Connect; we run the path.</dd>
             <dt>What leaves</dt>
-            <dd>Capture media → our GCS; ranch-vision Analyze = Vertex / GCP-region inference — not a customer VPC.</dd>
+            <dd>Optional capture media and vision analysis may use LOJO-operated cloud services unless you choose a Build placement in your boundary.</dd>
             <dt>What doesn’t</dt>
-            <dd>Latch &amp; control stay on the LOJO private path after Connect.</dd>
+            <dd>Latch &amp; control stay on the private path after Connect — not on the open internet.</dd>
           </dl>
         </article>
         <article class="deploy-card" role="listitem">
@@ -99,7 +99,7 @@
       </div>
       <aside class="honesty" aria-label="Honesty line">
         <h3>Honesty line</h3>
-        <p><strong>Today:</strong> Capture leaves the private path into LOJO GCS in project <code>montano-349204</code>, and Analyze runs as Vertex inference in a GCP region — not inside a customer VPC. <strong>Control</strong> (Connect → Pub-Node → GPIO) stays on the LOJO overlay. Customer VPC / on-prem is a Build path, not the default.</p>
+        <p><strong>Today:</strong> On the managed path, optional capture media and vision analysis may use LOJO-operated cloud services — not your VPC by default. <strong>Control</strong> (Connect → your sites → actuators) stays on the private path. Customer-owned cloud, VPC, or on-prem resources are a <strong>Build</strong> path when you want residency inside your boundary.</p>
       </aside>
     </section>
 
@@ -113,7 +113,7 @@
           <li><span class="stat">600+</span><span class="stat-label">cattle handled</span></li>
           <li><span class="stat">150+</span><span class="stat-label">wild horses</span></li>
         </ul>
-        <p class="fine">IoT and controls reach you after Connect — cameras and specialty apps keep doing their jobs. Capture media and Analyze currently land in LOJO’s GCP project (see <a href="#deploy">Deployment</a>). <a href="architecture-montano.html">How that deployment works →</a></p>
+        <p class="fine">IoT and controls reach you after Connect — cameras and specialty apps keep doing their jobs. See <a href="#deploy">Deployment</a> for what sits on the managed path vs what we place in your resources under Build.</p>
 
       <ul class="credibility" aria-label="Credibility">
         <li><strong>New Mexico</strong> — based in Albuquerque</li>
@@ -159,7 +159,7 @@
           <li>A managed private path — control off the open internet; <strong>LOJO-managed overlay today</strong></li>
           <li><strong>Customer VPC / on-prem via Build</strong> when residency must sit in your boundary</li>
           <li>IoT, edge gear, and remote sensing on messy last‑mile — cell, Wi‑Fi, or Starlink — we operate the network</li>
-          <li>Honest GCP boundary: Connexa + Cloud Run in <code>montano-349204</code> today; Capture → our GCS; Analyze = GCP-region Vertex — not your VPC by default</li>
+          <li>Honest residency boundary: managed path today; customer-owned cloud / VPC / on-prem via Build when you need it</li>
           <li>Optional private AI on your side when you want it — soft add-on, not the headline</li>
           <li>One invoice to LOJO; Montano cattle-trap is the proof of the same pattern</li>
         </ul>
@@ -201,10 +201,10 @@
           <h3>Proof — Montano ranch stack</h3>
           <ul class="checklist">
             <li>Field-proven cattle &amp; wild-horse trap pattern in New Mexico</li>
-            <li><strong>Capture → Analyze → maps</strong> on a private path; Cloud Run Pub-Node in <code>montano-349204</code></li>
+            <li><strong>Capture → Analyze → maps</strong> on a private path — same pattern we can stand up for you</li>
             <li>Same private-path discipline as the LOJO network offer</li>
           </ul>
-          <p class="fine">Scoped to the Montano Cloud Run stack in use today — not a Flex claim; not a customer-VPC claim.</p>
+          <p class="fine">Field proof of the private-path pattern — not a claim that every deployment already sits in your VPC.</p>
         </article>
         <article class="pilot-card pilot-card-accent">
           <h3>Who it’s for</h3>
