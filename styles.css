@@ -767,3 +767,16 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   background: rgba(111, 207, 151, 0.12);
   border: 1px solid rgba(111, 207, 151, 0.28);
 }
+
+/* Round 11: livestock stats visible on ag / Also offered only */
+.card-photo .stat-grid-inline,
+.service-compact-copy .stat-grid-inline {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0 1.15rem 1.15rem;
+  margin: 0.5rem 0 0;
+}
+.service-compact-copy .stat-grid-inline { padding-left: 0; padding-right: 0; }
+.stat-grid-inline .stat { font-size: 1.35rem; }
+.stat-grid-inline .stat-label { font-size: 0.8rem; }
