@@ -780,3 +780,14 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 .service-compact-copy .stat-grid-inline { padding-left: 0; padding-right: 0; }
 .stat-grid-inline .stat { font-size: 1.35rem; }
 .stat-grid-inline .stat-label { font-size: 0.8rem; }
+
+/* Round 13: last-mile line + denser trust strip */
+.lede-path {
+  font-size: 1rem;
+  max-width: 40rem;
+  margin: -0.5rem 0 1.25rem;
+  opacity: 0.9;
+}
+.cred-chip {
+  gap: 0.5rem 0.75rem;
+}
