@@ -639,3 +639,11 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   .visual-strip { grid-template-columns: 1fr; }
   .visual-strip-item:nth-child(n+3) { display: none; } /* keep 2 on narrow */
 }
+
+/* Round 5: compact cattle-trap offer */
+.service-band-compact {
+  padding-block: 2.5rem;
+}
+.service-band-compact .lede-tight {
+  max-width: 42rem;
+}
