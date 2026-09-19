@@ -740,3 +740,30 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   opacity: 0.85;
 }
 .card-stats { padding: 0 1.15rem 1.15rem !important; opacity: 0.9; }
+
+/* Round 9: punch + early credibility */
+.punch {
+  font-family: var(--display);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 0.35rem 0 1rem;
+  color: #6fcf97;
+  max-width: 36rem;
+}
+.cred-chip {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  padding: 0;
+  margin: 1rem 0 0;
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+.cred-chip li {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(111, 207, 151, 0.12);
+  border: 1px solid rgba(111, 207, 151, 0.28);
+}
