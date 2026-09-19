@@ -791,3 +791,21 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 .cred-chip {
   gap: 0.5rem 0.75rem;
 }
+
+/* Round 14 */
+.hero-actions .text-link {
+  align-self: center;
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.9;
+  font-weight: 500;
+}
+.hero-actions .text-link:hover { opacity: 1; }
+.offer-block { display: flex; flex-direction: column; gap: 0.75rem; }
+.last-mile {
+  margin: 0;
+  font-size: 1rem;
+  max-width: 36rem;
+  line-height: 1.35;
+}
