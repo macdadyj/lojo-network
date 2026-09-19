@@ -697,3 +697,46 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   border-radius: 12px;
   display: block;
 }
+
+/* Round 8: split lede + Connect UI mock */
+.lede-sub {
+  font-size: 1.05rem;
+  max-width: 40rem;
+  margin-top: -0.35rem;
+  margin-bottom: 1.25rem;
+  opacity: 0.92;
+}
+.hero-offer-row {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+@media (min-width: 900px) {
+  .hero-offer-row {
+    grid-template-columns: 1.2fr 0.55fr;
+  }
+}
+.hero-offer-row .offer-strip {
+  margin: 0;
+}
+.connect-mock {
+  margin: 0;
+  justify-self: center;
+  max-width: 220px;
+}
+.connect-mock img {
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+  display: block;
+  border: 3px solid rgba(255,255,255,0.08);
+}
+.connect-mock figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
+.card-stats { padding: 0 1.15rem 1.15rem !important; opacity: 0.9; }
