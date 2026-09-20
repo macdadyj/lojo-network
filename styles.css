@@ -809,3 +809,124 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   max-width: 36rem;
   line-height: 1.35;
 }
+
+/* Round 22: first-screen deploy choice + CSS Connect mock (no broken AI mock) */
+.hero-deploy {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0 0 1.5rem;
+}
+.hero-deploy-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 0.95rem 1.05rem 1.05rem;
+}
+.hero-deploy-card-today {
+  border-color: rgba(111, 207, 151, 0.4);
+  background: linear-gradient(165deg, rgba(111, 207, 151, 0.1), var(--panel) 50%);
+}
+.hero-deploy-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+.hero-deploy-card p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+@media (max-width: 700px) {
+  .hero-deploy { grid-template-columns: 1fr; }
+}
+
+.connect-phone {
+  width: 220px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.35rem 1.15rem 1.2rem;
+  border-radius: 28px;
+  background: #0b1410;
+  border: 3px solid rgba(255,255,255,0.08);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+  color: var(--text);
+}
+.connect-phone-brand {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+.connect-phone-title {
+  margin: 0.2rem 0 0;
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.connect-phone-sub {
+  margin: 0.35rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.connect-phone-site {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.85rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--line);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+.connect-phone-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(111,207,151,0.2);
+}
+.connect-phone-btn {
+  text-align: center;
+  font-weight: 700;
+  background: var(--accent);
+  color: #0b1410;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+}
+.connect-phone-fine {
+  margin: 0.85rem 0 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.cap-subhead {
+  width: min(100% - 2.5rem, var(--max));
+  margin: 2.5rem auto 0.4rem;
+  font-family: var(--display);
+  font-size: 1.35rem;
+}
+.cap-subhead-lede {
+  width: min(100% - 2.5rem, var(--max));
+  margin: 0 auto 1.25rem;
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 40rem;
+}
+
+.plans-addons th,
+.plans-addons td {
+  background: rgba(111, 207, 151, 0.06);
+}
+.plans-addons th { color: var(--accent-2); }
+
+@media (max-width: 390px) {
+  main > section { width: min(100% - 1.5rem, var(--max)); }
+  .hero-actions { gap: 0.6rem; }
+  .connect-phone { width: 100%; }
+}
