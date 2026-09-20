@@ -5,9 +5,11 @@ Marketing site for LOJO Private Networks — AI workflows on a private path (MCP
 Live: https://macdadyj.github.io/lojo-network/
 
 ## Messaging principles
-- Outcome first (adopt AI workflows for the business — then the stack)
+- Outcome first (adopt AI workflows for the business — then where agents run)
+- We sell the private path those agents run on (not an agent platform)
 - Private-path honesty (control, data, machines, and data stores off the public internet)
 - Deploy choice early (Managed today · Your environment via Build — on-prem or cloud)
+- Wedge: messy last-mile + remote video/vision + Connect / Operate / Build
 - Cattle / Montano stay proof or optional, not the hero
 - One CTA: email team@lojo.engineering
 - Owner language — capability names only (no vendor/stack IDs)
