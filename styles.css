@@ -983,8 +983,10 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 }
 .plans-addons th { color: var(--accent-2); }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   main > section { width: min(100% - 1.5rem, var(--max)); }
+  main > section.hero { padding-top: 2.25rem; padding-bottom: 3rem; }
+  .hero-outcomes li { font-size: 0.78rem; padding: 0.22rem 0.55rem; }
   .hero-actions { gap: 0.6rem; }
   .connect-phone { width: 100%; }
 }
