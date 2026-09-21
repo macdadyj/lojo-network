@@ -787,9 +787,27 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);
   font-weight: 600;
   letter-spacing: 0.01em;
-  margin: 0.35rem 0 1rem;
+  margin: 0.35rem 0 0.75rem;
   color: #6fcf97;
   max-width: 36rem;
+}
+.hero-outcomes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.45rem;
+  padding: 0;
+  margin: 0 0 1rem;
+  max-width: 44rem;
+}
+.hero-outcomes li {
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(111, 207, 151, 0.12);
+  border: 1px solid rgba(111, 207, 151, 0.38);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.82rem;
 }
 .cred-chip {
   list-style: none;

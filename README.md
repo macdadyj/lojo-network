@@ -1,11 +1,11 @@
 # LOJO Network (GitHub Pages)
 
-Marketing site for LOJO Private Networks — AI workflows on a private path (Private MCP, multi-agent, on-prem and cloud, on-path vision).
+Marketing site for LOJO Private Networks — AI workflows on a private path (site ops copilots, doc agents, vision alerts, last-mile AI).
 
 Live: https://macdadyj.github.io/lojo-network/
 
 ## Messaging principles
-- Outcome first (site copilots, private knowledge, vision alerts — then where agents run)
+- Outcome first (site ops copilots, doc agents, vision alerts, last-mile AI — then where agents run)
 - We sell the private path those agents run on (not an agent platform)
 - Private-path honesty (control, data, machines, and data stores off the public internet)
 - Deploy choice early (Managed today · Your environment via Build — on-prem or cloud)
