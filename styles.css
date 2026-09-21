@@ -626,6 +626,32 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 /* Round 4 — clearer ATF offer + visual strip */
 .hero h1 { max-width: 28ch; }
 .hero-actions { margin-bottom: 1.25rem; }
+.enable-strip {
+  list-style: none;
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0;
+  margin: 0 0 1.1rem;
+}
+.enable-strip li {
+  background: rgba(111, 207, 151, 0.07);
+  border: 1px solid rgba(111, 207, 151, 0.28);
+  border-radius: 1rem;
+  padding: 0.75rem 0.9rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.enable-strip strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.02rem;
+  margin-bottom: 0.1rem;
+}
+@media (max-width: 700px) {
+  .enable-strip { grid-template-columns: 1fr; }
+}
 .workflow-chips {
   list-style: none;
   display: flex;
