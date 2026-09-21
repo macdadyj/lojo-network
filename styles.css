@@ -175,11 +175,48 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 }
 .band-dark > .eyebrow,
 .band-dark > h2,
+.band-dark > .cap-intro,
+.band-dark > .cap-chips,
 .band-dark > .card-grid {
   width: min(100% - 2.5rem, var(--max));
   margin-inline: auto;
 }
 .band-dark > h2 { margin-bottom: 1.75rem; }
+
+.cap-intro {
+  color: var(--muted);
+  max-width: 42rem;
+  margin-top: -0.35rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.cap-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.55rem;
+  padding: 0;
+  margin: 0 auto 2.15rem;
+}
+.cap-chips li {
+  padding: 0.42rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(111, 207, 151, 0.12);
+  border: 1px solid rgba(111, 207, 151, 0.4);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+.cap-chips + .cap-subhead { margin-top: 0.15rem; }
+
+.card-grid-workflows {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 900px) {
+  .card-grid-workflows { grid-template-columns: 1fr; }
+}
 
 .card-grid {
   display: grid;
