@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Started · LOJO project SMS opt-in</title>
+  <meta name="description" content="Request Lojo Engineering project SMS. Name, email, mobile number, and an unchecked consent checkbox. Text START to (505) 207-4190. Up to 8 msgs/mo. Privacy Policy and SMS Terms.">
+  <link rel="canonical" href="https://macdadyj.github.io/lojo-network/get-started.html">
+  <meta property="og:title" content="Get Started · LOJO project SMS opt-in">
+  <meta property="og:description" content="Public web-form opt-in for Lojo Engineering transactional SMS from (505) 207-4190.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://macdadyj.github.io/lojo-network/get-started.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top" role="banner">
+    <a class="brand" href="./" aria-label="LOJO Private Networks home">
+      <span class="brand-lojo">LOJO</span>
+      <span class="brand-product">Private Networks</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="./">Home</a>
+      <a class="nav-start" href="get-started.html">Get Started</a>
+      <a class="nav-cta" href="mailto:team@lojo.engineering?subject=Talk%20AI%20plans">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="legal-page">
+    <p class="eyebrow">Web-form opt-in · Lojo Engineering</p>
+    <h1>Get started with project SMS</h1>
+    <p class="lede">Use this public form to ask Lojo Engineering to text you at <strong>(505) 207-4190</strong> about a computer-systems or AI-hardware project. You can also <a href="sms-opt-in.html">text START</a> to that number.</p>
+
+    <section class="sms-cta-card" aria-label="Alternate text opt-in">
+      <p class="sms-hero-cta">Or text <strong>START</strong> to <a href="sms:+15052074190?body=START">(505) 207-4190</a></p>
+      <p>Up to 8 msgs/mo. Message and data rates may apply. <strong>Reply STOP to cancel. Reply HELP for help.</strong> <a href="privacy-policy.html">Privacy Policy</a> · <a href="sms-terms.html">SMS Terms</a></p>
+    </section>
+
+    <section>
+      <h2>SMS opt-in form</h2>
+      <p>The consent box below is <strong>not pre-checked</strong>. Checking it is optional for buying any LOJO service — consent is not required to purchase. This page is the public disclosure UI campaign reviewers need to see. Submit uses your device’s mail app (<code>mailto:team@lojo.engineering</code>); no third-party form host is required.</p>
+      <form id="sms-opt-in-form" class="sms-form" action="mailto:team@lojo.engineering?subject=LOJO%20SMS%20opt-in%20request" method="post" enctype="text/plain">
+        <label class="sms-field">
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label class="sms-field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label class="sms-field">
+          <span>Mobile phone</span>
+          <input type="tel" name="mobile" autocomplete="tel" inputmode="tel" required>
+        </label>
+        <label class="sms-consent">
+          <input type="checkbox" name="sms_consent" value="yes" required>
+          <span>I agree to receive transactional text messages from Lojo Engineering at (505) 207-4190 about my computer-systems and AI-hardware projects, including project status, site-visit coordination, shipping updates, and replies to messages I send. Message frequency is up to 8 messages per month. Message and data rates may apply. Reply STOP to cancel. Reply HELP for help. Consent is not required as a condition of purchasing any goods or services. See our <a href="privacy-policy.html">Privacy Policy</a> and <a href="sms-terms.html">SMS Terms</a>.</span>
+        </label>
+        <button class="btn btn-primary" type="submit">Email my SMS opt-in request</button>
+      </form>
+      <noscript>
+        <p>JavaScript is not required. Use the submit button to open mail, or write <a href="mailto:team@lojo.engineering?subject=LOJO%20SMS%20opt-in%20request">team@lojo.engineering</a> with your name, email, mobile number, and the consent statement shown next to the checkbox.</p>
+      </noscript>
+      <p class="fine">Prefer email only (no SMS)? Write <a href="mailto:team@lojo.engineering?subject=Talk%20AI%20plans">team@lojo.engineering</a> — you do not have to join the text program to purchase.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div>
+      <strong>LOJO Engineering</strong>
+      <p>Private-path AI workflows · Albuquerque, NM</p>
+      <p class="sms-foot-cta">Text <strong>START</strong> to <strong>(505) 207-4190</strong> for project SMS. <a href="privacy-policy.html">Privacy Policy</a> · <a href="sms-terms.html">SMS Terms</a></p>
+    </div>
+    <div class="foot-links">
+      <a href="get-started.html">Get Started</a>
+      <a href="sms-opt-in.html">SMS Opt-In</a>
+      <a href="sms-terms.html">SMS Terms</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="mailto:team@lojo.engineering">team@lojo.engineering</a>
+    </div>
+  </footer>
+  <script src="sms-form.js" defer></script>
+</body>
+</html>
