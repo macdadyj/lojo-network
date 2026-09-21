@@ -68,6 +68,7 @@ a:hover { color: #9be4b5; }
   color: var(--accent);
 }
 .nav-plans { font-weight: 600; color: var(--text) !important; }
+.nav-start { font-weight: 600; color: var(--text) !important; }
 .nav { display: flex; flex-wrap: wrap; gap: 0.85rem 1.1rem; align-items: center; }
 .nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
 .nav a:hover { color: var(--text); }
@@ -307,7 +308,7 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   .proof, .split, .steps { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: 1fr; }
   h1 { max-width: none; }
-  .nav a:not(.nav-cta):not(.nav-plans) { display: none; }
+  .nav a:not(.nav-cta):not(.nav-plans):not(.nav-start) { display: none; }
   .brand-product { font-size: 0.78rem; }
 }
 
@@ -1004,4 +1005,135 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   main > section { width: min(100% - 1.5rem, var(--max)); }
   .hero-actions { gap: 0.6rem; }
   .connect-phone { width: 100%; }
+}
+
+/* A2P / SMS legal pages */
+.legal-page {
+  width: min(100% - 2.5rem, 46rem);
+  margin: 2rem auto 3.5rem;
+  padding-bottom: 1rem;
+}
+.legal-page h1 { max-width: none; }
+.legal-page h2 {
+  max-width: none;
+  margin-top: 2rem;
+  font-size: 1.35rem;
+}
+.legal-page section { margin: 0; }
+.legal-page ul,
+.legal-page ol { color: var(--muted); padding-left: 1.25rem; }
+.legal-page li { margin: 0.4rem 0; }
+.legal-page p { color: var(--muted); }
+.legal-page strong { color: var(--text); }
+
+.sms-cta-band {
+  background: linear-gradient(180deg, rgba(111, 207, 151, 0.1), rgba(111, 207, 151, 0.03));
+  border: 1px solid rgba(111, 207, 151, 0.32);
+  border-radius: 1.5rem;
+  padding: 2.4rem 1.5rem !important;
+  margin-bottom: 2rem;
+}
+.sms-cta-band h2 { max-width: none; }
+.sms-cta-band p { color: var(--muted); max-width: 42rem; }
+.sms-cta-band-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  margin: 1.1rem 0 0;
+  font-weight: 600;
+}
+
+.sms-cta-card {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.3rem 1.35rem;
+  background: var(--panel);
+  border: 1px solid rgba(111, 207, 151, 0.35);
+  border-radius: 1.15rem;
+}
+.sms-cta-card-hero { padding: 1.6rem 1.4rem 1.7rem; }
+.sms-kicker {
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-2);
+}
+.sms-hero-cta {
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  font-weight: 600;
+  color: var(--text) !important;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+.sms-number-plain {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+.sms-disclosures {
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+}
+.sms-legal-links {
+  margin: 1.15rem 0 0;
+  font-weight: 600;
+}
+
+.sms-form {
+  display: grid;
+  gap: 1rem;
+  margin: 1.15rem 0 0.75rem;
+}
+.sms-field {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.sms-field input {
+  font: inherit;
+  font-weight: 400;
+  color: var(--text);
+  background: #0f1613;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.85rem;
+}
+.sms-field input:focus {
+  outline: 2px solid rgba(111, 207, 151, 0.55);
+  outline-offset: 1px;
+}
+.sms-consent {
+  display: grid;
+  grid-template-columns: 1.25rem 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.02);
+}
+.sms-consent input[type="checkbox"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.2rem;
+  accent-color: var(--accent);
+}
+button.btn {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid transparent;
+  justify-self: start;
+}
+
+.sms-foot-cta {
+  margin-top: 0.65rem !important;
+  max-width: 28rem;
+  line-height: 1.45;
 }
