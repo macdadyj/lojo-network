@@ -17,3 +17,13 @@ Live: https://macdadyj.github.io/lojo-network/
 
 ## Stack
 Static HTML/CSS only. Push to `master` to publish.
+
+## A2P 10DLC public pages
+Sole Proprietor SMS campaign reviewers need crawlable disclosure URLs (not Wix):
+
+- Privacy: https://macdadyj.github.io/lojo-network/privacy-policy.html
+- SMS Terms: https://macdadyj.github.io/lojo-network/sms-terms.html
+- Keyword opt-in: https://macdadyj.github.io/lojo-network/sms-opt-in.html
+- Web form: https://macdadyj.github.io/lojo-network/get-started.html
+
+Program number: (505) 207-4190. Up to 8 msgs/mo. Text START to opt in. `get-started.html` uses a public unchecked consent checkbox and a `mailto:team@lojo.engineering` submit (Twilio cares that the disclosure UI is public).
