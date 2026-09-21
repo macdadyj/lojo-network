@@ -211,11 +211,14 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 }
 .cap-chips + .cap-subhead { margin-top: 0.15rem; }
 
-.card-grid-workflows {
+.card-grid.card-grid-workflows {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-@media (max-width: 900px) {
-  .card-grid-workflows { grid-template-columns: 1fr; }
+@media (max-width: 1100px) {
+  .card-grid.card-grid-workflows { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .card-grid.card-grid-workflows { grid-template-columns: 1fr; }
 }
 
 .card-grid {
