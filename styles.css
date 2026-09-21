@@ -175,11 +175,35 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 }
 .band-dark > .eyebrow,
 .band-dark > h2,
-.band-dark > .card-grid {
+.band-dark > .card-grid,
+.band-dark > .cap-grid,
+.band-dark > .cap-intro {
   width: min(100% - 2.5rem, var(--max));
   margin-inline: auto;
 }
-.band-dark > h2 { margin-bottom: 1.75rem; }
+.band-dark > h2 { margin-bottom: 0.85rem; }
+.cap-intro {
+  color: var(--muted);
+  font-size: 1.05rem;
+  max-width: 42rem;
+  margin: 0 auto 1.75rem;
+}
+.cap-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.cap-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 1.15rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+.cap-card h3 { margin: 0 0 0.45rem; font-size: 1.05rem; }
+.cap-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 900px) {
+  .cap-grid { grid-template-columns: 1fr; }
+}
 
 .card-grid {
   display: grid;
@@ -292,8 +316,8 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 .hero h1 { letter-spacing: -0.02em; }
 .proof-media img { transition: transform 0.4s ease; }
 .proof-media:hover img { transform: scale(1.02); }
-.card { transition: border-color 0.2s ease, transform 0.2s ease; }
-.card:hover { border-color: rgba(111,207,151,0.35); transform: translateY(-2px); }
+.card, .cap-card { transition: border-color 0.2s ease, transform 0.2s ease; }
+.card:hover, .cap-card:hover { border-color: rgba(111,207,151,0.35); transform: translateY(-2px); }
 .cta-block { box-shadow: 0 0 0 1px rgba(111,207,151,0.08), 0 24px 60px rgba(0,0,0,0.25); }
 
 /* Pilot package */
@@ -596,6 +620,24 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 /* Round 4 — clearer ATF offer + visual strip */
 .hero h1 { max-width: 28ch; }
 .hero-actions { margin-bottom: 1.25rem; }
+.workflow-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.65rem;
+  padding: 0;
+  margin: 0 0 1.35rem;
+}
+.workflow-chips li {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(111, 207, 151, 0.28);
+  background: rgba(111, 207, 151, 0.08);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
 .offer-strip {
   list-style: none; padding: 0; margin: 0 0 1.75rem;
   display: grid; gap: 0.75rem;

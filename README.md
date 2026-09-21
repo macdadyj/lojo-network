@@ -1,6 +1,6 @@
 # LOJO Network (GitHub Pages)
 
-Marketing site for LOJO Private Networks — AI workflows on a private path (MCP servers, private multi-agent, on-prem and cloud-enabled).
+Marketing site for LOJO Private Networks — AI workflows on a private path (site ops copilots, knowledge agents, vision alerts, multi-agent handoffs; on-prem and cloud-enabled).
 
 Live: https://macdadyj.github.io/lojo-network/
 
