@@ -175,11 +175,51 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 }
 .band-dark > .eyebrow,
 .band-dark > h2,
+.band-dark > .cap-intro,
+.band-dark > .cap-chips,
 .band-dark > .card-grid {
   width: min(100% - 2.5rem, var(--max));
   margin-inline: auto;
 }
 .band-dark > h2 { margin-bottom: 1.75rem; }
+
+.cap-intro {
+  color: var(--muted);
+  max-width: 42rem;
+  margin-top: -0.35rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.cap-chips {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.55rem;
+  padding: 0;
+  margin: 0 auto 2.15rem;
+}
+.cap-chips li {
+  padding: 0.42rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(111, 207, 151, 0.12);
+  border: 1px solid rgba(111, 207, 151, 0.4);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+.cap-chips + .cap-subhead { margin-top: 0.15rem; }
+
+.card-grid.card-grid-workflows {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 1100px) {
+  .card-grid.card-grid-workflows { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .card-grid.card-grid-workflows { grid-template-columns: 1fr; }
+}
 
 .card-grid {
   display: grid;
@@ -747,9 +787,27 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   font-size: clamp(1.15rem, 2.2vw, 1.45rem);
   font-weight: 600;
   letter-spacing: 0.01em;
-  margin: 0.35rem 0 1rem;
+  margin: 0.35rem 0 0.75rem;
   color: #6fcf97;
   max-width: 36rem;
+}
+.hero-outcomes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.45rem;
+  padding: 0;
+  margin: 0 0 1rem;
+  max-width: 44rem;
+}
+.hero-outcomes li {
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(111, 207, 151, 0.12);
+  border: 1px solid rgba(111, 207, 151, 0.38);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.82rem;
 }
 .cred-chip {
   list-style: none;
@@ -925,8 +983,10 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 }
 .plans-addons th { color: var(--accent-2); }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   main > section { width: min(100% - 1.5rem, var(--max)); }
+  main > section.hero { padding-top: 2.25rem; padding-bottom: 3rem; }
+  .hero-outcomes li { font-size: 0.78rem; padding: 0.22rem 0.55rem; }
   .hero-actions { gap: 0.6rem; }
   .connect-phone { width: 100%; }
 }
