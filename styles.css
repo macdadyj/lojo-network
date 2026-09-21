@@ -572,6 +572,12 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
 .card-grid-markets {
   grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr));
 }
+.workflow-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (max-width: 900px) {
+  .workflow-grid { grid-template-columns: 1fr; }
+}
 .card-job {
   color: var(--accent) !important;
   font-weight: 600;
