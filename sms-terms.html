@@ -30,7 +30,7 @@
   </header>
 
   <main id="main" class="legal-page">
-    <p class="eyebrow">SMS program · last updated September 21, 2026</p>
+    <p class="eyebrow">SMS program · last updated September 22, 2026</p>
     <h1>SMS Terms and Conditions</h1>
     <p class="lede">These terms cover the <strong>Lojo Engineering</strong> transactional SMS program. Messages are sent from <strong>(505) 207-4190</strong>.</p>
 
@@ -41,10 +41,10 @@
 
     <section>
       <h2>How to opt in</h2>
-      <p>You can join in either of these ways:</p>
+      <p>Joining the text program is voluntary. You can request and purchase Lojo Engineering services without it. If you want texts, you can join in either of these ways:</p>
       <ol>
         <li><strong>By text:</strong> Text <strong>START</strong> to <strong>(505) 207-4190</strong>. Keyword instructions are also posted at <a href="sms-opt-in.html">sms-opt-in.html</a>.</li>
-        <li><strong>By web form:</strong> Submit the form below or the same form on <a href="get-started.html">get-started.html</a>. The SMS consent checkbox is <em>not</em> pre-checked. You must check it yourself.</li>
+        <li><strong>By web form:</strong> On <a href="get-started.html">Get Started</a> or in the form below, check the SMS consent box yourself and enter a mobile number, then use <strong>Email my request with SMS opt-in</strong>. The box is not pre-checked and is not required. <strong>Email my request (no SMS)</strong> sends an email request only — it is not SMS consent, and it does not need a phone number.</li>
       </ol>
     </section>
 
@@ -54,28 +54,38 @@
     </section>
 
     <section>
-      <h2>Web-form opt-in</h2>
-      <p>Use this form (or <a href="get-started.html">Get Started</a>) to request project SMS. Submitting opens your email app addressed to <a href="mailto:team@lojo.engineering">team@lojo.engineering</a>. This disclosure UI is posted publicly for messaging-program review; a server-side form processor is not required.</p>
-      <form id="sms-opt-in-form" class="sms-form" action="mailto:team@lojo.engineering?subject=LOJO%20SMS%20opt-in%20request" method="post" enctype="text/plain">
+      <h2>Web form</h2>
+      <p>Use this form, or the same form on <a href="get-started.html">Get Started</a>, to email <a href="mailto:team@lojo.engineering">team@lojo.engineering</a>. Name and email are required for a reply. The SMS checkbox is optional, unchecked, and not required. A mobile number is required only when you choose the SMS button after checking the box. No server-side form processor is used; submit opens your mail app.</p>
+      <form id="sms-opt-in-form" class="sms-form" action="mailto:team@lojo.engineering?subject=LOJO%20project%20request" method="post" enctype="text/plain">
         <label class="sms-field">
-          <span>Name</span>
+          <span>Name <span class="req" aria-hidden="true">*</span></span>
           <input type="text" name="name" autocomplete="name" required>
         </label>
         <label class="sms-field">
-          <span>Email</span>
+          <span>Email <span class="req" aria-hidden="true">*</span></span>
           <input type="email" name="email" autocomplete="email" required>
         </label>
-        <label class="sms-field">
-          <span>Mobile phone</span>
-          <input type="tel" name="mobile" autocomplete="tel" inputmode="tel" required>
-        </label>
-        <label class="sms-consent">
-          <input type="checkbox" name="sms_consent" value="yes" required>
-          <span>I agree to receive transactional text messages from Lojo Engineering at (505) 207-4190 about my computer-systems and AI-hardware projects, including project status, site-visit coordination, shipping updates, and replies to messages I send. Message frequency is up to 8 messages per month. Message and data rates may apply. Reply STOP to cancel. Reply HELP for help. Consent is not required as a condition of purchasing any goods or services. See our <a href="privacy-policy.html">Privacy Policy</a> and <a href="sms-terms.html">SMS Terms</a>.</span>
-        </label>
-        <button class="btn btn-primary" type="submit">Email my SMS opt-in request</button>
+        <fieldset class="sms-optional" id="sms-updates">
+          <legend>Add SMS updates (optional)</legend>
+          <p class="sms-optional-note" id="sms-optional-note">Skip this section to contact us by email only. Checking the box is a separate choice. It is <strong>not required</strong> to request service or to purchase. The box stays unchecked unless you check it.</p>
+          <label class="sms-consent">
+            <input type="checkbox" name="sms_consent" value="yes" aria-required="false" aria-describedby="sms-optional-note">
+            <span>I agree to receive transactional text messages from Lojo Engineering at (505) 207-4190 about my computer-systems and AI-hardware projects, including project status, site-visit coordination, shipping updates, and replies to messages I send. Message frequency is up to 8 messages per month. Message and data rates may apply. Reply STOP to cancel. Reply HELP for help. Consent is not required as a condition of purchasing any goods or services. See our <a href="privacy-policy.html">Privacy Policy</a> and <a href="sms-terms.html">SMS Terms</a>.</span>
+          </label>
+          <label class="sms-field">
+            <span>Mobile phone <span id="mobile-requirement" class="sms-hint">optional — not required unless you opt in</span></span>
+            <input type="tel" name="mobile" autocomplete="tel" inputmode="tel" aria-required="false" aria-describedby="mobile-requirement sms-phone-error">
+          </label>
+          <p id="sms-phone-error" class="sms-field-error" role="alert" hidden></p>
+        </fieldset>
+        <p id="sms-opt-in-status" class="sms-status" role="status">SMS opt-in is off. You can submit with name and email only — no phone number and no consent checkbox.</p>
+        <p id="sms-form-error" class="sms-field-error" role="alert" hidden></p>
+        <div class="sms-actions">
+          <button class="btn btn-primary" type="submit" name="submit_intent" value="email-only" data-intent="email">Email my request (no SMS)</button>
+          <button class="btn btn-ghost" type="submit" name="submit_intent" value="sms-opt-in" data-intent="sms">Email my request with SMS opt-in</button>
+        </div>
       </form>
-      <p class="fine">If your browser does not open mail, send the same details to <a href="mailto:team@lojo.engineering?subject=LOJO%20SMS%20opt-in%20request">team@lojo.engineering</a>.</p>
+      <p class="fine">If your browser does not open mail, send the same details to <a href="mailto:team@lojo.engineering?subject=LOJO%20project%20request%20(no%20SMS)">team@lojo.engineering</a>. Say that you do not want SMS unless you checked the box and included a mobile number.</p>
     </section>
 
     <section>
@@ -92,7 +102,7 @@
 
     <section>
       <h2>Consent is not required to purchase</h2>
-      <p>Consent to receive SMS is <strong>not required as a condition of purchasing</strong> any Lojo Engineering goods or services. You can buy Connect, Operate, or Build without joining this text program.</p>
+      <p>Consent to receive SMS is <strong>not required as a condition of purchasing</strong> any Lojo Engineering goods or services. You can buy Connect, Operate, or Build without joining this text program. You can also submit <a href="get-started.html">Get Started</a> with name and email only, using <strong>Email my request (no SMS)</strong>, and never provide a phone number.</p>
     </section>
 
     <section>
