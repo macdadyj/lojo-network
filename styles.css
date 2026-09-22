@@ -1131,6 +1131,61 @@ button.btn {
   border: 1px solid transparent;
   justify-self: start;
 }
+button.btn.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--line);
+}
+button.btn.btn-ghost:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+button.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.sms-optional {
+  margin: 0.25rem 0 0;
+  padding: 0.9rem 1rem 1.05rem;
+  border: 1px dashed rgba(111, 207, 151, 0.45);
+  border-radius: 1rem;
+  min-inline-size: 0;
+  display: grid;
+  gap: 0.85rem;
+  background: rgba(111, 207, 151, 0.04);
+}
+.sms-optional legend {
+  padding: 0 0.35rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.sms-optional-note { margin: 0; }
+.sms-hint {
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.req { color: var(--accent-2); }
+.sms-status {
+  margin: 0;
+  font-weight: 600;
+  color: var(--muted);
+}
+.sms-status.is-on { color: var(--accent); }
+.sms-field-error {
+  margin: 0;
+  color: #ffb4a8;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.sms-field input[aria-invalid="true"] { border-color: #e07a6a; }
+.sms-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
 
 .sms-foot-cta {
   margin-top: 0.65rem !important;
