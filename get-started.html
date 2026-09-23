@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Get Started · LOJO</title>
-  <meta name="description" content="Request Lojo Engineering services by email. SMS is optional and is not required to purchase or to submit. The consent checkbox is unchecked by default. Text START to (505) 207-4190 only if you want texts.">
+  <meta name="description" content="Request Lojo Engineering services by email. Name and email are enough. This page does not collect a phone number and does not require SMS consent. Web SMS opt-in is a separate page.">
   <link rel="canonical" href="https://macdadyj.github.io/lojo-network/get-started.html">
   <meta property="og:title" content="Get Started · LOJO">
-  <meta property="og:description" content="Request a Lojo Engineering project by email. SMS updates from (505) 207-4190 are optional and are not required to submit or to purchase.">
+  <meta property="og:description" content="Request a Lojo Engineering project by email. A phone number and SMS consent are not required to submit or to purchase.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://macdadyj.github.io/lojo-network/get-started.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,12 +32,12 @@
   <main id="main" class="legal-page">
     <p class="eyebrow">Project request · Lojo Engineering</p>
     <h1>Get started</h1>
-    <p class="lede">Tell us about a computer-systems or AI-hardware project. <strong>Name and email are enough.</strong> SMS is optional — you can request service and submit this form without a phone number and without agreeing to texts.</p>
+    <p class="lede">Tell us about a computer-systems or AI-hardware project. <strong>Name and email are enough.</strong> This form does not opt you in to SMS. A phone number is not required, and SMS consent is not required to submit or to purchase.</p>
 
     <section>
       <h2>Request service by email</h2>
-      <p>Required fields are marked with *. The SMS section is separate. Leave it unchecked, skip the phone number, and use <strong>Email my request (no SMS)</strong>. That button does not opt you in, even if the box is checked.</p>
-      <form id="sms-opt-in-form" class="sms-form" action="mailto:team@lojo.engineering?subject=LOJO%20project%20request" method="post" enctype="text/plain">
+      <p>Required fields are marked with *. Submitting this form sends an email request only. It is not an SMS opt-in.</p>
+      <form id="service-request-form" class="sms-form" action="mailto:team@lojo.engineering?subject=LOJO%20project%20request%20(no%20SMS)" method="post" enctype="text/plain">
         <label class="sms-field">
           <span>Name <span class="req" aria-hidden="true">*</span></span>
           <input type="text" name="name" autocomplete="name" required>
@@ -46,38 +46,22 @@
           <span>Email <span class="req" aria-hidden="true">*</span></span>
           <input type="email" name="email" autocomplete="email" required>
         </label>
-
-        <fieldset class="sms-optional" id="sms-updates">
-          <legend>Add SMS updates (optional)</legend>
-          <p class="sms-optional-note" id="sms-optional-note">Skip this section to contact us by email only. Checking the box is a separate choice. It is <strong>not required</strong> to request service or to purchase. The box stays unchecked unless you check it.</p>
-          <label class="sms-consent">
-            <input type="checkbox" name="sms_consent" value="yes" aria-required="false" aria-describedby="sms-optional-note">
-            <span>I agree to receive transactional text messages from Lojo Engineering at (505) 207-4190 about my computer-systems and AI-hardware projects, including project status, site-visit coordination, shipping updates, and replies to messages I send. Message frequency is up to 8 messages per month. Message and data rates may apply. Reply STOP to cancel. Reply HELP for help. Consent is not required as a condition of purchasing any goods or services. See our <a href="privacy-policy.html">Privacy Policy</a> and <a href="sms-terms.html">SMS Terms</a>.</span>
-          </label>
-          <label class="sms-field">
-            <span>Mobile phone <span id="mobile-requirement" class="sms-hint">optional — not required unless you opt in</span></span>
-            <input type="tel" name="mobile" autocomplete="tel" inputmode="tel" aria-required="false" aria-describedby="mobile-requirement sms-phone-error">
-          </label>
-          <p id="sms-phone-error" class="sms-field-error" role="alert" hidden></p>
-        </fieldset>
-
-        <p id="sms-opt-in-status" class="sms-status" role="status">SMS opt-in is off. You can submit with name and email only — no phone number and no consent checkbox.</p>
-        <p id="sms-form-error" class="sms-field-error" role="alert" hidden></p>
         <div class="sms-actions">
-          <button class="btn btn-primary" type="submit" name="submit_intent" value="email-only" data-intent="email">Email my request (no SMS)</button>
-          <button class="btn btn-ghost" type="submit" name="submit_intent" value="sms-opt-in" data-intent="sms">Email my request with SMS opt-in</button>
+          <button class="btn btn-primary" type="submit">Email my request</button>
         </div>
       </form>
       <noscript>
-        <p>JavaScript is not required. Leave the SMS box unchecked and use “Email my request (no SMS)” — name and email are enough. Check the box and include a mobile number only if you want texts. You can also write <a href="mailto:team@lojo.engineering?subject=LOJO%20project%20request%20(no%20SMS)">team@lojo.engineering</a> directly.</p>
+        <p>JavaScript is not required. Name and email are enough. This form does not ask for a phone number and does not opt you in to SMS. You can also write <a href="mailto:team@lojo.engineering?subject=LOJO%20project%20request%20(no%20SMS)">team@lojo.engineering</a> directly.</p>
       </noscript>
       <p class="fine">Prefer to skip the form? Email <a href="mailto:team@lojo.engineering?subject=LOJO%20project%20request%20(no%20SMS)">team@lojo.engineering</a>. You do not have to join the text program to purchase Connect, Operate, or Build.</p>
     </section>
 
-    <section class="sms-cta-card" aria-label="Voluntary text opt-in">
-      <p class="sms-kicker">Optional · another way to opt in</p>
-      <p class="sms-hero-cta">Prefer to opt in by text? Text <strong>START</strong> to <a href="sms:+15052074190?body=START">(505) 207-4190</a></p>
-      <p>This is voluntary. You do not need to text START to request service. Up to 8 msgs/mo. Message and data rates may apply. <strong>Reply STOP to cancel. Reply HELP for help.</strong> <a href="privacy-policy.html">Privacy Policy</a> · <a href="sms-terms.html">SMS Terms</a></p>
+    <section class="sms-cta-card" aria-label="Separate SMS opt-in">
+      <p class="sms-kicker">Optional · only if you want texts</p>
+      <p class="sms-hero-cta">Web SMS opt-in is a separate page</p>
+      <p>Get Started does not collect a mobile number. If you want project texts, open <a href="sms-signup.html">SMS signup</a>, enter a mobile phone number, and check the consent box. The box on that page is unchecked until you check it. Or text <strong>START</strong> to <a href="sms:+15052074190?body=START">(505) 207-4190</a>.</p>
+      <p>Up to 8 msgs/mo. Message and data rates may apply. <strong>Reply STOP to cancel. Reply HELP for help.</strong> <a href="privacy-policy.html">Privacy Policy</a> · <a href="sms-terms.html">SMS Terms</a></p>
+      <p><a class="btn btn-ghost" href="sms-signup.html">Open SMS signup</a></p>
     </section>
   </main>
 
@@ -89,6 +73,7 @@
     </div>
     <div class="foot-links">
       <a href="get-started.html">Get Started</a>
+      <a href="sms-signup.html">SMS Signup</a>
       <a href="sms-opt-in.html">SMS Opt-In</a>
       <a href="sms-terms.html">SMS Terms</a>
       <a href="privacy-policy.html">Privacy Policy</a>

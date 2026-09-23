@@ -1080,6 +1080,15 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   margin: 1.15rem 0 0;
   font-weight: 600;
 }
+.legal-page p.sms-reviewer-note {
+  margin: 0 0 1.25rem;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font-weight: 600;
+}
 
 .sms-form {
   display: grid;
