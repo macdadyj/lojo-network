@@ -1,11 +1,11 @@
 # LOJO Network (GitHub Pages)
 
-Marketing site for LOJO Private Networks — AI workflows on a private path (site ops copilots, knowledge agents, vision alerts, multi-agent handoffs; on-prem and cloud-enabled).
+Marketing site for LOJO Private Networks — SI (Super Intelligence) workflows on a private path (site ops copilots, knowledge agents, vision alerts, multi-agent handoffs; on-prem and cloud-enabled).
 
 Live: https://macdadyj.github.io/lojo-network/
 
 ## Messaging principles
-- Outcome first (get the company AI-enabled — existing jobs start using AI)
+- Outcome first (get the company SI-enabled — existing jobs start using SI)
 - We sell the private path those company workflows run on (not an agent platform)
 - Private-path honesty (control, data, machines, and data stores off the public internet)
 - Deploy choice early (Managed today · Your environment via Build — on-prem or cloud)
