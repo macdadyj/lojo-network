@@ -2,7 +2,7 @@
   "use strict";
 
   var CONSENT_STATEMENT =
-    "I agree to receive transactional text messages from Lojo Engineering at (505) 207-4190 about my computer-systems and SI (Super Intelligence)-hardware projects, including project status, site-visit coordination, shipping updates, and replies to messages I send. Message frequency is up to 8 messages per month. Message and data rates may apply. Reply STOP to cancel. Reply HELP for help. Consent is not required as a condition of purchasing any goods or services.";
+    "I agree to receive transactional text messages from Lojo Engineering at (505) 207-4190 about my computer-systems and Super Intelligence (SI) hardware projects, including project status, site-visit coordination, shipping updates, and replies to messages I send. Message frequency is up to 8 messages per month. Message and data rates may apply. Reply STOP to cancel. Reply HELP for help. Consent is not required as a condition of purchasing any goods or services.";
 
   var PHONE_ERROR = "Enter a mobile phone number to submit this SMS opt-in.";
   var CONSENT_ERROR = "Check the consent box to submit this SMS opt-in. The box is unchecked until you check it.";
