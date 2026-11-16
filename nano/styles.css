@@ -1,0 +1,338 @@
+/* Archive of lojo.engineering (Wix), November 2026.
+   Display face is Raleway, as on the live site. Body copy used Avenir,
+   which is a commercial face hosted by Wix; Nunito Sans is the stand-in. */
+
+:root {
+  --ink: #281a39;
+  --bg: #f6f6f6;
+  --nav: #15514f;
+  --card: rgba(246, 246, 246, 0.9);
+  --font: "Nunito Sans", "Avenir Next", "Segoe UI", sans-serif;
+  --display: "Raleway", "Trebuchet MS", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-weight: 300;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.7;
+  font-size: 1.15rem;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--nav); }
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--ink);
+  margin: 0 0 0.6rem;
+}
+h1 { font-size: clamp(2rem, 4.2vw, 2.6rem); }
+h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
+h4 { font-size: clamp(1.4rem, 2.4vw, 1.8rem); }
+p { margin: 0 0 1rem; }
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0;
+}
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 20;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.archive-banner {
+  margin: 0;
+  background: var(--nav);
+  color: #f6f6f6;
+  text-align: center;
+  font-size: 0.86rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding: 0.45rem 0.9rem;
+}
+.archive-banner a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.site-header {
+  padding: 1.4rem 1rem 0.4rem;
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+}
+.logo img {
+  width: min(290px, 72vw);
+  height: auto;
+  margin: 0 auto;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem 0.85rem;
+  padding: 0.85rem 0.5rem 0.4rem;
+}
+.nav a {
+  color: var(--nav);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 0.25rem 0.1rem;
+}
+.nav a:hover,
+.nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+}
+
+.headline {
+  text-align: center;
+  padding: 2.2rem 1.25rem 1.2rem;
+}
+.headline h1 {
+  max-width: 16em;
+  margin: 0 auto;
+}
+
+.wave-band,
+.photo-band {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3.5rem 1.25rem;
+}
+.wave-band { min-height: 26rem; }
+.photo-band { min-height: 32rem; }
+.photo-band.short { min-height: 22rem; }
+
+.card {
+  background: var(--card);
+  padding: 2rem 1.75rem 1.8rem;
+  max-width: 46rem;
+  width: min(100%, 46rem);
+}
+.card.narrow { max-width: 36rem; }
+.card h2, .card h1 { text-align: center; }
+.center-copy { text-align: center; }
+.center-copy p { text-align: center; }
+
+.btn {
+  display: inline-block;
+  background: var(--ink);
+  color: #f6f6f6;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 400;
+  padding: 0.55rem 1.2rem;
+  margin-top: 0.4rem;
+}
+.btn:hover { background: #3c2756; color: #fff; }
+
+.plain {
+  width: min(100% - 2.5rem, 52rem);
+  margin: 0 auto;
+  padding: 3.4rem 0 2.6rem;
+}
+.plain h2, .section-head {
+  text-align: center;
+}
+.lede {
+  font-size: 1.28rem;
+  line-height: 1.7;
+}
+.kicker {
+  text-align: center;
+  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+.subhead {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.frame {
+  width: min(100%, 747px);
+  margin: 1.5rem auto 0;
+}
+.bleed {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.inset-photo {
+  width: min(100%, 980px);
+  margin: 1.4rem auto 0;
+}
+
+.bullets {
+  padding-left: 1.2rem;
+  margin: 0 0 1rem;
+}
+.bullets li { margin: 0 0 0.85rem; }
+
+.lab-band {
+  background: var(--ink);
+  padding: 0;
+}
+.lab-band img { width: 100%; height: auto; }
+
+.site-footer {
+  text-align: center;
+  padding: 2.4rem 1rem 2.8rem;
+  color: var(--ink);
+  background: var(--bg);
+}
+.site-footer a { color: var(--ink); }
+.site-footer .phone { margin-top: 0.15rem; }
+.copyright {
+  margin-top: 1.5rem;
+  letter-spacing: 0.06em;
+  font-size: 0.95rem;
+}
+
+.hero-stack {
+  position: relative;
+  min-height: 28rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 1.25rem;
+}
+.hero-stack .spiral-wash {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 55%;
+  background: url("assets/spiral.png") center bottom / cover no-repeat;
+  opacity: 0.95;
+  pointer-events: none;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 1.75rem 2.25rem;
+  align-items: center;
+  width: min(100% - 2rem, 72rem);
+  margin: 0 auto;
+  padding: 1.6rem 0;
+}
+.split.flip { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); }
+.split.flip img { order: 2; }
+.split h2 { text-align: left; }
+.placeholder {
+  font-style: italic;
+}
+
+.figure {
+  width: min(100% - 2rem, 58rem);
+  margin: 1.5rem auto;
+}
+.figure figcaption {
+  margin-top: 0.7rem;
+  text-align: center;
+  font-size: 1.05rem;
+}
+.pair, .trio {
+  display: grid;
+  gap: 1rem;
+  width: min(100% - 2rem, 52rem);
+  margin: 0.5rem auto 2rem;
+}
+.pair { grid-template-columns: 1fr 1fr; }
+.trio { grid-template-columns: 1fr 1fr 1fr; }
+.diagram {
+  background: #fff;
+  width: 100%;
+  height: auto;
+}
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 22rem));
+  justify-content: center;
+  gap: 2.75rem 3rem;
+  width: min(100% - 2rem, 52rem);
+  margin: 0 auto 2rem;
+}
+.person { text-align: center; }
+.person .portrait {
+  width: 235px;
+  height: 235px;
+  object-fit: cover;
+  margin: 0 auto 0.85rem;
+}
+.person h3 {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0 0 0.15rem;
+}
+.role {
+  font-weight: 600;
+  margin: 0 0 0.55rem;
+}
+.person p { text-align: center; }
+.linkedin {
+  display: inline-block;
+  margin-top: 0.35rem;
+}
+.linkedin img { width: 24px; height: 24px; }
+.person:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 22rem;
+}
+
+.team-photo {
+  width: min(100% - 2rem, 44rem);
+  margin: 0.5rem auto 2rem;
+}
+
+.affiliates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem 2.5rem;
+  width: min(100% - 2rem, 56rem);
+  margin: 0.5rem auto 2.5rem;
+}
+.affiliates a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.8rem 1rem;
+}
+.affiliates img { max-height: 92px; width: auto; max-width: 280px; }
+
+@media (max-width: 800px) {
+  .split, .split.flip { grid-template-columns: 1fr; }
+  .split.flip img { order: -1; }
+  .split h2 { text-align: center; }
+  .pair, .trio { grid-template-columns: 1fr; }
+  .people { grid-template-columns: 1fr; }
+  .person:last-child:nth-child(odd) { grid-column: auto; max-width: none; }
+  .photo-band { min-height: 24rem; padding: 2.2rem 1rem; }
+  .wave-band { min-height: 22rem; }
+  .card { padding: 1.4rem 1.1rem 1.3rem; }
+}
