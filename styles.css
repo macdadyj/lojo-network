@@ -308,7 +308,7 @@ h3 { font-size: 1.15rem; margin: 0 0 0.45rem; }
   .proof, .split, .steps { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: 1fr; }
   h1 { max-width: none; }
-  .nav a:not(.nav-cta):not(.nav-plans):not(.nav-start) { display: none; }
+  .nav a:not(.nav-cta):not(.nav-plans):not(.nav-start):not(.nav-nano) { display: none; }
   .brand-product { font-size: 0.78rem; }
 }
 
